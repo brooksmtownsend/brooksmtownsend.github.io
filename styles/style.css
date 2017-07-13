@@ -1,31 +1,32 @@
-#bgGradient {
-    background: #86BBD8; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#86BBD8, #336699); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#86BBD8, #336699); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#86BBD8, #336699); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#86BBD8, #336699); /* Standard syntax */
+:root {
+    --main-background-color: #000000;
+    --secondary-background-color: #ffffff;
+    --text-color: #ffffff;
+}
+
+#background {
+    background: url("../images/woodwall.jpg") no-repeat center;
 }
 
 h1.header {
-    color: #efefef;
+    color: var(--text-color);
     text-align: center;
     padding-top: 40px;
-    font-size: 4vw;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: black 1px 1px 1px;
+    font-size: 5vw;
     font-family: Arial, Helvetica, sans-serif;
 }
 h1.subtitle {
-    color: #efefef;
+    color: var(--text-color);
     text-align: center;
     font-size: 3vw;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 2px gray;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
-    color: #efefef;
-    text-align: justify;
-    text-shadow: 1px 1px 1px black;
+    color: #ffffff;
+    text-align: left;
     padding-left: 5%;
     padding-right: 5%;
     font-size: 2.5vw;
@@ -36,34 +37,44 @@ hr.mainDivider{
     width: 85vw;
 }
 
-div.centerContent{
+div.horizontalContent{
     display: flex;
-    flex-direction: horizontal;
+    flex-direction: row;
 }
 
+div.verticalContent{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    height: 55vw;
+}
 div.infoBox{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: #86BBD8;
-    width: 49vw;
-    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 75vw;
+    border-radius: 4px;
+    margin: auto;
 }
 
 div.infoBoxWide{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: #86BBD8;
-    width: 80vw;
-    border-radius: 10px;
+    background-color: var(--secondary-background-color);
+    width: 90vw;
+    border-radius: 4px;
 }
 
 div.picture{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: #86BBD8;
-    border-radius: 10px;
+    background-color: var(--secondary-background-color);
+    border-radius: 4px;
+    width: 29vw;
+    margin: auto;
 }
 
 div.picture img{
     width: 29vw;
-    border-radius: 10px;
+    border-radius: 4px;
 }
 
 div.sideBar{
@@ -83,37 +94,40 @@ div.horizontalDivide{
 
 #toolbar {
     display: none;
-    top: 0px;
-    left: 4px;
     position: fixed;
     width: 8vw;
+    top: 0px;
+    margin-top: 0px;
+    left: 0px;
     flex-flow: column wrap;
     height: 10.5vw;
     z-index: 999;
-    background: #86BBD8;
+    background: var(--main-background-color);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
 }
 
 .toolbar-item {
     cursor: pointer;
-    color: #efefef;
+    color: var(--text-color);
     text-align: justify;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px gray;
     border-bottom: 1px solid grey;
     padding-bottom: 10px;
     padding-top: 10px;
     font-size: 1.5vw;
-    text-align: center;
+    text-align: left;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #toolbarButton{
     border: none;
-    left: 4px;
-    top: 4px;
     background: white;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 2vw;
     position: fixed;
 }
 
