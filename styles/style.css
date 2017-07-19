@@ -54,6 +54,7 @@ div.horizontalContent{
     flex-direction: row;
     align-content: center;
     justify-content: space-between;
+    margin-top: 30px;
 }
 
 div.verticalContent{
@@ -61,7 +62,6 @@ div.verticalContent{
     flex-direction: column;
     align-content: center;
     justify-content: space-between;
-    height: 55vw;
 }
 div.infoBox{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -76,6 +76,7 @@ div.infoBoxWide{
     background-color: rgba(0, 0, 0, 0.5);
     width: 90vw;
     border-radius: 4px;
+    margin-left: 5vw;
 }
 
 div.picture{
@@ -102,7 +103,7 @@ div.picture img{
     top: 0px;
     left: 0px;
     width: 100vw;
-    height: 2vw;
+    height: 30px;
     position: fixed;
 }
 
@@ -111,10 +112,9 @@ div.picture img{
     color: var(--text-color);
     text-align: justify;
     text-shadow: 1px 1px 1px gray;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding-top: 3px;
     padding-left: 3px;
-    font-size: 1.5vw;
+    font-size: 20px;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
 }
