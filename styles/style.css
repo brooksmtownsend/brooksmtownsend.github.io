@@ -3,20 +3,11 @@
     --secondary-background-color: #555555;
     --text-color: #efefef;
     --toolbar-color: #1976D2;
-    /*Primary color Blue:
-
-    500: #2196F3
-    700: #1976D2
-    800: #1565C0
-
-    Secondary color Pink:
-    A200: #FF4081
-
-    */
+    /* --toolbar-color: rgba(109, 148, 244, 1); FOR BG IMAGE VERSION */
 }
 
 #background {
-    /*background: url("../images/woodwall.jpg") no-repeat center;*/
+    /* background: url("https://wallpapercave.com/wp/OLrPvT4.jpg") no-repeat center top fixed; */
     background-color: var(--main-background-color);
 }
 
@@ -86,7 +77,6 @@ div.picture{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: var(--secondary-background-color);
     border-radius: 4px;
-    /*width: 29vw;*/
     margin: auto;
 }
 
@@ -125,7 +115,7 @@ div.picture img{
 /*Animations*/
 @keyframes slideFromBottom{
     0%   {
-        padding-top: 25vw;
+        transform: translate3d(0px, 25vw, 0px);
         opacity: 0;
     }
 
@@ -134,7 +124,7 @@ div.picture img{
     }
 
     100% {
-        padding-top: 0vw;
+        transform: translate3d(0px, 0vw, 0px);
         opacity: 1.0;
     }
 }
@@ -150,17 +140,15 @@ div.picture img{
 }
 
 @keyframes slideFromLeft {
-    0%   {
-        padding-right: 25vw;
+    0% {
+        transform: translate3d(-25vw, 0px, 0px);
         opacity: 0;
     }
-
-    50%    {
+    50% {
         opacity: .25;
     }
-
     100% {
-        padding-right: 0vw;
+        transform: translate3d(0px, 00px, 0px);
         opacity: 1.0;
     }
 }
