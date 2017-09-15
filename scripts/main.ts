@@ -1,1 +1,0 @@
-let element: HTMLElement = document.getElementById("playgroundDiv");
