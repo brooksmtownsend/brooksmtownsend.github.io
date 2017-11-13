@@ -1,10 +1,13 @@
 #!/bin/bash
 
+echo "Building new version..."
+cd ../metabuilding/websites/brooksmtownsend-react/ && npm run build
+
 echo "Copying build files...."
-cp * -r ../metabuilding/websites/brooksmtownsend-react/build/* ./
+cp -r build/* ~/brookstownsend.me/
 echo "Gitting and updating"
 
-git status
+cd ~/brookstownsend.me/ && git status
 git add --all
 git commit -m "Updated build $(date)"
 git pull origin master
