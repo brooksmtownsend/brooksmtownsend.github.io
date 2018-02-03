@@ -4,6 +4,11 @@ Personal website containing information about me, my projects, and my experience
 # Want to know about me?
 Go to the website! That's what it's for :)
 
-# Something cool that came out of this project
-I got great experience with React and Typescript while rebuilding my personal project, but something that happened most recently (and that I am proud of)
-is the automated build process that I have created. Currently, this repo has a shell script that will build a new version of my website, copy all of the build files from my development directory, and then commit them to this repo. Very cool!
+# The evolution of brookstownsend.me
+There have been three versions of this website since its migration from github.io's hosting.
+- HTML/CSS/JS
+- React, Typescript, Apache and no back-end
+- React, Typescript, Express, MongoDB
+
+The first iteration was when I was new to web dev, the second after beginning to learn more and more about the latest and greatest of the web, and now with the most recent version I have been rebuilding it with the MEAN stack as an exercise in development, as well as committing myself to updating this website as often as possible (which is much easier with a backend)
+
