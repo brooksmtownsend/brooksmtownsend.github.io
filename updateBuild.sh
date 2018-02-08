@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Building new version..."
-cd ../metabuilding/websites/brooksmtownsend-react/ && npm run build
+cd ~/metabuilding/websites/brooksmtownsend-react/ && npm run build
 
 echo "Copying build files...."
 cp -r build/* ~/brookstownsend.me/
