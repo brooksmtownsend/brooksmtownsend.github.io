@@ -1,0 +1,48 @@
+:root {
+    --main-background-color: #303841;
+    --secondary-background-color: #3a4750;
+    --text-color: #eee;
+}
+
+html, body {
+	font: 14px/1.21 'Helvetica Neue', arial, sans-serif;
+  font-weight: 400;
+  background-color: var(--main-background-color) !important;
+}
+
+h1 {
+	text-align: center;
+}
+
+.fullpageImage { 
+  /* The image used */
+  background-image: url("https://i.imgur.com/gskHA7H.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-title {
+  color: white;
+}
+
+.carousel-item > img {
+  margin:auto;
+}
+
+.jumbotron {
+  background-color:transparent !important; 
+}
+
+.card-body {
+  background-color: var(--secondary-background-color) !important; 
+}
+
+.experience-card, .project-card {
+  border: none !important;
+}
