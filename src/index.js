@@ -11,7 +11,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <html lang="en">
+      <div>
         <Head />
         <body className=''>
           <FullpageImage />
@@ -23,9 +23,8 @@ export default class App extends Component {
           </div>
           <Experience />
           <Projects />
-
         </body>
-      </html>
+      </div>
     );
   }
 }
