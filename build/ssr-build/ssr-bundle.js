@@ -120,8 +120,8 @@ var _ref = Object(preact_min["h"])(
           )
         ),
         Object(preact_min["h"])(
-          'h1',
-          { className: 'display-2 page-title' },
+          'h2',
+          { className: 'display-3 page-title' },
           'BROOKS TOWNSEND'
         )
       )
@@ -157,7 +157,7 @@ function Sidebar__inherits(subClass, superClass) { if (typeof superClass !== "fu
 
 var Sidebar__ref = Object(preact_min["h"])(
   'div',
-  { className: 'col-md-3 sidebar' },
+  { className: 'col-md-2 sidebar' },
   Object(preact_min["h"])(
     'ul',
     { 'class': 'navbar-nav ml-auto' },
@@ -228,7 +228,7 @@ function AboutMe__inherits(subClass, superClass) { if (typeof superClass !== "fu
 
 var AboutMe__ref = Object(preact_min["h"])(
   'div',
-  { className: 'col-md-9 content' },
+  { className: 'col-md-10 content' },
   Object(preact_min["h"])(
     'div',
     { className: 'jumbotron jumbotron-fluid' },
@@ -368,7 +368,7 @@ var IOSProjectCard_IOSProjectCard = function (_Component) {
       { className: "col-md-5 " + offset },
       Object(preact_min["h"])(
         "div",
-        { className: "card" },
+        { className: "card project-card" },
         Object(preact_min["h"])(
           "div",
           { id: "carouselExampleControls", className: "carousel slide", "data-ride": "carousel" },
@@ -409,7 +409,7 @@ var IOSProjectCard_IOSProjectCard = function (_Component) {
           ),
           Object(preact_min["h"])(
             "p",
-            { className: "card-text text-muted" },
+            { className: "card-text font-weight-light" },
             "Skills used: " + skills
           ),
           Object(preact_min["h"])(
@@ -456,7 +456,7 @@ var LargeProjectCard_LargeProjectCard = function (_Component) {
       { className: "col-md-10 offset-md-1" },
       Object(preact_min["h"])(
         "div",
-        { className: "card" },
+        { className: "card project-card" },
         Object(preact_min["h"])("img", { className: "card-img-top", src: src, alt: "Card image cap" }),
         Object(preact_min["h"])(
           "div",
@@ -473,7 +473,7 @@ var LargeProjectCard_LargeProjectCard = function (_Component) {
           ),
           Object(preact_min["h"])(
             "p",
-            { className: "card-text text-muted" },
+            { className: "card-text font-weight-light" },
             "Skills used: " + skills
           ),
           Object(preact_min["h"])(
@@ -531,6 +531,7 @@ var Projects__ref = Object(preact_min["h"])(
               skills: 'HTML, CSS, TypeScript, React, MobX, Python, MySQL, Amazon AWS.',
               link: 'https://github.com/hankhester/plancarolina'
             }),
+            Object(preact_min["h"])('div', { 'class': 'col-md-12', style: 'height:15px;' }),
             Object(preact_min["h"])(IOSProjectCard_IOSProjectCard, {
               src1: 'https://i.imgur.com/R1nGo6d.png',
               src2: 'https://i.imgur.com/GSuFhaG.png',
@@ -623,7 +624,7 @@ var Experience_ExperienceCard = function (_Component2) {
       { className: 'col-md-10 offset-md-1' },
       Object(preact_min["h"])(
         'div',
-        { className: 'card' },
+        { className: 'card experience-card' },
         Object(preact_min["h"])('img', { className: 'card-img-top', src: src, alt: 'Card image cap' }),
         Object(preact_min["h"])(
           'div',
@@ -674,11 +675,13 @@ var Experience__ref = Object(preact_min["h"])(
               title: 'SentryOne',
               description: 'I worked at SentryOne last summer as an iOS development intern. As a sophomore intern, I was the youngest one in the office that was doing development. Working for a company was very different than me just coding in my room. Agile development, TDD, and code reviews were a huge part of what I was doing, and what makes me a better programmer today. This is me with all of the other engineering interns with some of our new SentryOne swag.'
             }),
+            Object(preact_min["h"])('div', { 'class': 'col-md-12', style: 'height:15px;' }),
             Object(preact_min["h"])(Experience_ExperienceCard, {
               src: 'https://i.imgur.com/NIBfJb9.jpg',
               title: 'COMP110 UTA',
               description: 'I work as a COMP110 UTA at UNC Chapel Hill along with all of these other wonderful people. COMP110 is the introduction to programming course at UNC, and is the largest undergraduate course at over 900 students per semester. I personally tutor hundreds of students a month, and I lead review sessions along with another UTA. I am also a part of the team leads, which is a special team of the head TAs that meet with the professor once a week to discuss the course.'
             }),
+            Object(preact_min["h"])('div', { 'class': 'col-md-12', style: 'height:15px;' }),
             Object(preact_min["h"])(Experience_ExperienceCard, {
               src: 'https://i.imgur.com/Ek38GPE.png',
               description: 'Something that I have loved about being an UTA for COMP110 is the sheer number of students that we help every day. Over the last two semesters, I have accumulated 300 office hours tickets for over 240 students, and seeing their feedback is incredibly rewarding.'
@@ -690,7 +693,7 @@ var Experience__ref = Object(preact_min["h"])(
   )
 );
 // CONCATENATED MODULE: ./index.js
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return App; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return index_App; });
 
 
 function index__classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -708,30 +711,17 @@ function index__inherits(subClass, superClass) { if (typeof superClass !== "func
 
 
 
-var index__ref = Object(preact_min["h"])(
-  'html',
-  { lang: 'en' },
-  Object(preact_min["h"])(Head_Head, null),
-  Object(preact_min["h"])(
-    'body',
-    { className: 'bg-dark text-light' },
-    Object(preact_min["h"])(FullpageImage, null),
-    Object(preact_min["h"])(
-      'div',
-      { className: 'container' },
-      Object(preact_min["h"])(
-        'div',
-        { className: 'row' },
-        Object(preact_min["h"])(Sidebar, null),
-        Object(preact_min["h"])(AboutMe, null)
-      )
-    ),
-    Object(preact_min["h"])(Experience, null),
-    Object(preact_min["h"])(Projects, null)
-  )
-);
+var index__ref = Object(preact_min["h"])(Head_Head, null);
 
-var App = function (_Component) {
+var index__ref2 = Object(preact_min["h"])(FullpageImage, null);
+
+var index__ref3 = Object(preact_min["h"])(AboutMe, null);
+
+var index__ref4 = Object(preact_min["h"])(Experience, null);
+
+var _ref5 = Object(preact_min["h"])(Projects, null);
+
+var index_App = function (_Component) {
   index__inherits(App, _Component);
 
   function App() {
@@ -741,7 +731,27 @@ var App = function (_Component) {
   }
 
   App.prototype.render = function render() {
-    return index__ref;
+    return Object(preact_min["h"])(
+      'html',
+      { lang: 'en' },
+      index__ref,
+      Object(preact_min["h"])(
+        'body',
+        { className: '' },
+        index__ref2,
+        Object(preact_min["h"])(
+          'div',
+          { className: 'container' },
+          Object(preact_min["h"])(
+            'div',
+            { className: 'row align-items-center justify-content-center' },
+            index__ref3
+          )
+        ),
+        index__ref4,
+        _ref5
+      )
+    );
   };
 
   return App;
