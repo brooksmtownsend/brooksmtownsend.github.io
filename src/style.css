@@ -1,13 +1,17 @@
 :root {
     --main-background-color: #303841;
-    --secondary-background-color: #3a4750;
-    --text-color: #eee;
+    --secondary-background-color: #282f36;
+    --text-background-color: #3A4750;
+    --text-color: #EEEEEE;
+    --accent-color: #EA9215;
 }
 
 html, body {
 	font: 14px/1.21 'Helvetica Neue', arial, sans-serif;
   font-weight: 400;
-  background-color: var(--main-background-color) !important;
+  background: var(--main-background-color) !important; 
+  background: linear-gradient(to bottom right,var(--main-background-color), var(--secondary-background-color)) !important;
+  color: var(--text-color) !important;
 }
 
 h1 {
@@ -37,12 +41,18 @@ h1 {
 
 .jumbotron {
   background-color:transparent !important; 
+  padding-bottom: 0rem !important;
 }
 
 .card-body {
-  background-color: var(--secondary-background-color) !important; 
+  background-color: var(--text-background-color) !important; 
 }
 
 .experience-card, .project-card {
+  border: none !important;
+}
+
+.btn-primary {
+  background-color: var(--accent-color) !important;
   border: none !important;
 }

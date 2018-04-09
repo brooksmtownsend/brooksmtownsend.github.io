@@ -13,11 +13,11 @@ export default class App extends Component {
     return (
       <html lang="en">
         <Head />
-        <body className='text-light'>
+        <body className=''>
           <FullpageImage />
           <div className='container'>
-            <div className='row align-items-center'>
-              <Sidebar />
+            <div className='row align-items-center justify-content-center'>
+              {/* <Sidebar /> */}
               <AboutMe />
             </div>
           </div>

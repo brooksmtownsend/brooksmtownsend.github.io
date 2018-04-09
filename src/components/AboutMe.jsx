@@ -3,7 +3,7 @@ import { h, render, Component } from 'preact';
 export class AboutMe extends Component {
   render() {
     return (
-      <div className='col-md-9 content'>
+      <div className='col-md-10 content'>
         <div className='jumbotron jumbotron-fluid'>
           <div className="container">
             <h1 className="display-4" id="about-me">About me</h1>

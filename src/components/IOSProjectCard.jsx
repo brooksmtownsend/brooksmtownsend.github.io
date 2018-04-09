@@ -40,7 +40,7 @@ export class IOSProjectCard extends Component {
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
           <p className="card-text">{description}</p>
-          <p className="card-text text-muted">{"Skills used: " + skills}</p>
+          <p className="card-text font-weight-light">{"Skills used: " + skills}</p>
           <a href={link} className="btn btn-primary">View on Github</a>
         </div>
       </div>
