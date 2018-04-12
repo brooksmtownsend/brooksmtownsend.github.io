@@ -275,18 +275,8 @@ function Head__inherits(subClass, superClass) { if (typeof superClass !== "funct
 
 
 
-var Head__ref = Object(preact_min["h"])("meta", { charset: "utf-8" });
-
-var _ref2 = Object(preact_min["h"])("meta", { name: "viewport", content: "width=device-width, initial-scale=1, shrink-to-fit=no" });
-
-var _ref3 = Object(preact_min["h"])("link", { rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", integrity: "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm",
+var Head__ref = Object(preact_min["h"])("link", { rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", integrity: "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm",
   crossorigin: "anonymous" });
-
-var _ref4 = Object(preact_min["h"])(
-  "title",
-  null,
-  "Brooks Townsend"
-);
 
 var Head_Head = function (_Component) {
   Head__inherits(Head, _Component);
@@ -301,10 +291,7 @@ var Head_Head = function (_Component) {
     return Object(preact_min["h"])(
       "head",
       null,
-      Head__ref,
-      _ref2,
-      _ref3,
-      _ref4
+      Head__ref
     );
   };
 
@@ -332,7 +319,7 @@ var IOSProjectCard__ref = Object(preact_min["h"])(
   )
 );
 
-var IOSProjectCard__ref2 = Object(preact_min["h"])(
+var _ref2 = Object(preact_min["h"])(
   "a",
   { className: "carousel-control-next", role: "button", "data-slide": "next" },
   Object(preact_min["h"])("span", { className: "carousel-control-next-icon", "aria-hidden": "true" }),
@@ -392,7 +379,7 @@ var IOSProjectCard_IOSProjectCard = function (_Component) {
             )
           ),
           IOSProjectCard__ref,
-          IOSProjectCard__ref2
+          _ref2
         ),
         Object(preact_min["h"])(
           "div",
@@ -715,9 +702,9 @@ var index__ref = Object(preact_min["h"])(Head_Head, null);
 
 var index__ref2 = Object(preact_min["h"])(FullpageImage, null);
 
-var index__ref3 = Object(preact_min["h"])(AboutMe, null);
+var _ref3 = Object(preact_min["h"])(AboutMe, null);
 
-var index__ref4 = Object(preact_min["h"])(Experience, null);
+var _ref4 = Object(preact_min["h"])(Experience, null);
 
 var _ref5 = Object(preact_min["h"])(Projects, null);
 
@@ -732,8 +719,8 @@ var index_App = function (_Component) {
 
   App.prototype.render = function render() {
     return Object(preact_min["h"])(
-      'html',
-      { lang: 'en' },
+      'div',
+      null,
       index__ref,
       Object(preact_min["h"])(
         'body',
@@ -745,10 +732,10 @@ var index_App = function (_Component) {
           Object(preact_min["h"])(
             'div',
             { className: 'row align-items-center justify-content-center' },
-            index__ref3
+            _ref3
           )
         ),
-        index__ref4,
+        _ref4,
         _ref5
       )
     );
