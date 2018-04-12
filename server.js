@@ -6,7 +6,7 @@ const port = 8080
 app.use('/', express.static(__dirname + '/'));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join('index.html'))
+    res.sendFile(path.join('./build/index.html'))
 })
 
 app.listen(port, '172.31.13.84', (err) => {

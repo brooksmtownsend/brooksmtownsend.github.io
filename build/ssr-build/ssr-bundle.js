@@ -732,8 +732,8 @@ var index_App = function (_Component) {
 
   App.prototype.render = function render() {
     return Object(preact_min["h"])(
-      'html',
-      { lang: 'en' },
+      'div',
+      null,
       index__ref,
       Object(preact_min["h"])(
         'body',
