@@ -50,6 +50,7 @@ h1 {
 
 .experience-card, .project-card {
   border: none !important;
+  background-color: none !important;
 }
 
 .btn-primary {
