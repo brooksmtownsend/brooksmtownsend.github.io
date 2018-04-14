@@ -106,10 +106,10 @@ var _ref = Object(preact_min["h"])(
     { className: 'container container-fluid' },
     Object(preact_min["h"])(
       'div',
-      { className: 'row align-items-center justify-content-center', style: 'height: 100vh;' },
+      { className: 'row align-items-end justify-content-center', style: 'height: 100vh;' },
       Object(preact_min["h"])(
         'div',
-        { className: 'col-12 text-center' },
+        { className: 'col-12 text-left' },
         Object(preact_min["h"])(
           'h4',
           { className: 'page-title' },
@@ -708,6 +708,12 @@ var _ref4 = Object(preact_min["h"])(Experience, null);
 
 var _ref5 = Object(preact_min["h"])(Projects, null);
 
+var _ref6 = Object(preact_min["h"])('script', { src: 'https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity: 'sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin: 'anonymous' });
+
+var _ref7 = Object(preact_min["h"])('script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', integrity: 'sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin: 'anonymous' });
+
+var _ref8 = Object(preact_min["h"])('script', { src: 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity: 'sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin: 'anonymous' });
+
 var index_App = function (_Component) {
   index__inherits(App, _Component);
 
@@ -736,7 +742,10 @@ var index_App = function (_Component) {
           )
         ),
         _ref4,
-        _ref5
+        _ref5,
+        _ref6,
+        _ref7,
+        _ref8
       )
     );
   };
