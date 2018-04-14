@@ -31,6 +31,7 @@ export class Projects extends Component {
                     offset={true}
                     bgcolor='rgba(16, 79, 98, .9)'
                   />
+                  {/* <div class="col-md-12" style="height:15px;"></div> */}
                   <IOSProjectCard
                     src1='https://i.imgur.com/rVX3asA.png'
                     src2='https://i.imgur.com/xIVuHgf.png'

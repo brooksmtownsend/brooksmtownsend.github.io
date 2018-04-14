@@ -27,14 +27,14 @@ export class IOSProjectCard extends Component {
               <img className="d-block h-50 w-50" src={src3} alt="Third slide" />
             </div>
           </div>
-          <a className="carousel-control-prev" role="button" data-slide="prev">
+          {/* <a className="carousel-control-prev" role="button" data-slide="prev">
             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
             <span className="sr-only">Previous</span>
           </a>
           <a className="carousel-control-next" role="button" data-slide="next">
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
             <span className="sr-only">Next</span>
-          </a>
+          </a> */}
         </div>
 
         <div className="card-body">

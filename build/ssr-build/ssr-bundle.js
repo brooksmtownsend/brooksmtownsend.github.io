@@ -308,28 +308,6 @@ function IOSProjectCard__inherits(subClass, superClass) { if (typeof superClass 
 
 
 
-var IOSProjectCard__ref = Object(preact_min["h"])(
-  "a",
-  { className: "carousel-control-prev", role: "button", "data-slide": "prev" },
-  Object(preact_min["h"])("span", { className: "carousel-control-prev-icon", "aria-hidden": "true" }),
-  Object(preact_min["h"])(
-    "span",
-    { className: "sr-only" },
-    "Previous"
-  )
-);
-
-var _ref2 = Object(preact_min["h"])(
-  "a",
-  { className: "carousel-control-next", role: "button", "data-slide": "next" },
-  Object(preact_min["h"])("span", { className: "carousel-control-next-icon", "aria-hidden": "true" }),
-  Object(preact_min["h"])(
-    "span",
-    { className: "sr-only" },
-    "Next"
-  )
-);
-
 var IOSProjectCard_IOSProjectCard = function (_Component) {
   IOSProjectCard__inherits(IOSProjectCard, _Component);
 
@@ -377,9 +355,7 @@ var IOSProjectCard_IOSProjectCard = function (_Component) {
               { className: "carousel-item", style: { backgroundColor: bgcolor } },
               Object(preact_min["h"])("img", { className: "d-block h-50 w-50", src: src3, alt: "Third slide" })
             )
-          ),
-          IOSProjectCard__ref,
-          _ref2
+          )
         ),
         Object(preact_min["h"])(
           "div",
@@ -489,66 +465,46 @@ function Projects__inherits(subClass, superClass) { if (typeof superClass !== "f
 
 
 var Projects__ref = Object(preact_min["h"])(
-  'div',
-  { className: 'container container-fluid' },
-  Object(preact_min["h"])(
-    'div',
-    { className: 'row' },
-    Object(preact_min["h"])(
-      'div',
-      { className: 'col-md-12 content' },
-      Object(preact_min["h"])(
-        'div',
-        { className: 'jumbotron jumbotron-fluid' },
-        Object(preact_min["h"])(
-          'div',
-          { className: 'container ' },
-          Object(preact_min["h"])(
-            'h1',
-            { className: 'display-4', id: 'projects' },
-            'My Projects'
-          ),
-          Object(preact_min["h"])(
-            'div',
-            { className: 'row' },
-            Object(preact_min["h"])(LargeProjectCard_LargeProjectCard, {
-              src: 'https://i.imgur.com/cqejWjX.png',
-              title: 'PlanCarolina',
-              description: 'At UNC there are endless opportunities; however, those endless options can be overwhelming especially with only four years to seize them. We found ourselves rewriting our four-year plans over and over again on pieces of paper each time we took that art history or philosophy className and instantly wanted to add another major or minor. Could we fit it in? What about study abroad? The erasing and reoutlining became onerous, especially with the confusing UNC academic worksheets. Out of this frustration grew PlanCarolina, a tool that we hope will help you explore your indecisiveness efficiently. We are a team of three Juniors studying Computer Science, Linguistics, Economics, Math, and... who knows? We hope PlanCarolina will help you plan out your four years at this school of national champions! Cheers to planning! Kate, Hank, and Brooks.',
-              skills: 'HTML, CSS, TypeScript, React, MobX, Python, MySQL, Amazon AWS.',
-              link: 'https://github.com/hankhester/plancarolina'
-            }),
-            Object(preact_min["h"])('div', { 'class': 'col-md-12', style: 'height:15px;' }),
-            Object(preact_min["h"])(IOSProjectCard_IOSProjectCard, {
-              src1: 'https://i.imgur.com/R1nGo6d.png',
-              src2: 'https://i.imgur.com/GSuFhaG.png',
-              src3: 'https://i.imgur.com/2wa3KC7.png',
-              title: 'Phi Sigma Pi Mobile Application',
-              description: 'Last semester, I worked with my Co-IT chair to design, develop, and maintain a cross platform application to update outdated communication and data collection systems. We also recorded detailed documentation and engineered comprehensive unit tests to simplify production and scalability. Our first goal was to release the application to over 50 unique users on Apple App store and Android Play store, which we accomplished and the majority of the fraternity now uses the app every event.',
-              skills: 'React-Native, React-Native-Elements, CSS, Google Firebase, Google Play Store, iTunes Connect.',
-              link: 'https://github.com/brooksmtownsend/PhiSigmaPiAK',
-              offset: true,
-              bgcolor: 'rgba(16, 79, 98, .9)'
-            }),
-            Object(preact_min["h"])(IOSProjectCard_IOSProjectCard, {
-              src1: 'https://i.imgur.com/rVX3asA.png',
-              src2: 'https://i.imgur.com/xIVuHgf.png',
-              src3: 'https://i.imgur.com/yvkO7Ah.png',
-              title: 'Personal Weightlifting Tracker',
-              description: 'I found that the apps that were on the app store for weight tracking were not exactly what I wanted. Bodybuilding.com has a cluttered app, while StrongLifts is too specific to the StrongLifts program. I chose to make this app as a personal project, because I thought it would be a great learning experience as well as something that I could actually use. Though I made a working application, I think that it is visually not my best work so I am currently in the process of remaking the weightlifting app, since I have much more experience in iOS development after my internship.',
-              skills: 'Skills used: Apple iOS Programming, Swift 3.0, Core Data Stack, XCode interface builder.',
-              link: 'https://github.com/brooksmtownsend/Personal-Lift-Tracker',
-              offset: false,
-              bgcolor: 'rgba(190, 37, 55, .9)'
-            })
-          )
-        )
-      )
-    )
-  )
+  'h1',
+  { className: 'display-4', id: 'projects' },
+  'My Projects'
 );
 
-var Projects = function (_Component) {
+var _ref2 = Object(preact_min["h"])(LargeProjectCard_LargeProjectCard, {
+  src: 'https://i.imgur.com/cqejWjX.png',
+  title: 'PlanCarolina',
+  description: 'At UNC there are endless opportunities; however, those endless options can be overwhelming especially with only four years to seize them. We found ourselves rewriting our four-year plans over and over again on pieces of paper each time we took that art history or philosophy className and instantly wanted to add another major or minor. Could we fit it in? What about study abroad? The erasing and reoutlining became onerous, especially with the confusing UNC academic worksheets. Out of this frustration grew PlanCarolina, a tool that we hope will help you explore your indecisiveness efficiently. We are a team of three Juniors studying Computer Science, Linguistics, Economics, Math, and... who knows? We hope PlanCarolina will help you plan out your four years at this school of national champions! Cheers to planning! Kate, Hank, and Brooks.',
+  skills: 'HTML, CSS, TypeScript, React, MobX, Python, MySQL, Amazon AWS.',
+  link: 'https://github.com/hankhester/plancarolina'
+});
+
+var _ref3 = Object(preact_min["h"])('div', { 'class': 'col-md-12', style: 'height:15px;' });
+
+var _ref4 = Object(preact_min["h"])(IOSProjectCard_IOSProjectCard, {
+  src1: 'https://i.imgur.com/R1nGo6d.png',
+  src2: 'https://i.imgur.com/GSuFhaG.png',
+  src3: 'https://i.imgur.com/2wa3KC7.png',
+  title: 'Phi Sigma Pi Mobile Application',
+  description: 'Last semester, I worked with my Co-IT chair to design, develop, and maintain a cross platform application to update outdated communication and data collection systems. We also recorded detailed documentation and engineered comprehensive unit tests to simplify production and scalability. Our first goal was to release the application to over 50 unique users on Apple App store and Android Play store, which we accomplished and the majority of the fraternity now uses the app every event.',
+  skills: 'React-Native, React-Native-Elements, CSS, Google Firebase, Google Play Store, iTunes Connect.',
+  link: 'https://github.com/brooksmtownsend/PhiSigmaPiAK',
+  offset: true,
+  bgcolor: 'rgba(16, 79, 98, .9)'
+});
+
+var _ref5 = Object(preact_min["h"])(IOSProjectCard_IOSProjectCard, {
+  src1: 'https://i.imgur.com/rVX3asA.png',
+  src2: 'https://i.imgur.com/xIVuHgf.png',
+  src3: 'https://i.imgur.com/yvkO7Ah.png',
+  title: 'Personal Weightlifting Tracker',
+  description: 'I found that the apps that were on the app store for weight tracking were not exactly what I wanted. Bodybuilding.com has a cluttered app, while StrongLifts is too specific to the StrongLifts program. I chose to make this app as a personal project, because I thought it would be a great learning experience as well as something that I could actually use. Though I made a working application, I think that it is visually not my best work so I am currently in the process of remaking the weightlifting app, since I have much more experience in iOS development after my internship.',
+  skills: 'Skills used: Apple iOS Programming, Swift 3.0, Core Data Stack, XCode interface builder.',
+  link: 'https://github.com/brooksmtownsend/Personal-Lift-Tracker',
+  offset: false,
+  bgcolor: 'rgba(190, 37, 55, .9)'
+});
+
+var Projects_Projects = function (_Component) {
   Projects__inherits(Projects, _Component);
 
   function Projects() {
@@ -558,7 +514,35 @@ var Projects = function (_Component) {
   }
 
   Projects.prototype.render = function render() {
-    return Projects__ref;
+    return Object(preact_min["h"])(
+      'div',
+      { className: 'container container-fluid' },
+      Object(preact_min["h"])(
+        'div',
+        { className: 'row' },
+        Object(preact_min["h"])(
+          'div',
+          { className: 'col-md-12 content' },
+          Object(preact_min["h"])(
+            'div',
+            { className: 'jumbotron jumbotron-fluid' },
+            Object(preact_min["h"])(
+              'div',
+              { className: 'container ' },
+              Projects__ref,
+              Object(preact_min["h"])(
+                'div',
+                { className: 'row' },
+                _ref2,
+                _ref3,
+                _ref4,
+                _ref5
+              )
+            )
+          )
+        )
+      )
+    );
   };
 
   return Projects;
@@ -702,11 +686,11 @@ var index__ref = Object(preact_min["h"])(Head_Head, null);
 
 var index__ref2 = Object(preact_min["h"])(FullpageImage, null);
 
-var _ref3 = Object(preact_min["h"])(AboutMe, null);
+var index__ref3 = Object(preact_min["h"])(AboutMe, null);
 
-var _ref4 = Object(preact_min["h"])(Experience, null);
+var index__ref4 = Object(preact_min["h"])(Experience, null);
 
-var _ref5 = Object(preact_min["h"])(Projects, null);
+var index__ref5 = Object(preact_min["h"])(Projects_Projects, null);
 
 var _ref6 = Object(preact_min["h"])('script', { src: 'https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity: 'sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin: 'anonymous' });
 
@@ -738,11 +722,11 @@ var index_App = function (_Component) {
           Object(preact_min["h"])(
             'div',
             { className: 'row align-items-center justify-content-center' },
-            _ref3
+            index__ref3
           )
         ),
-        _ref4,
-        _ref5,
+        index__ref4,
+        index__ref5,
         _ref6,
         _ref7,
         _ref8
