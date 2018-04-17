@@ -343,17 +343,17 @@ var IOSProjectCard_IOSProjectCard = function (_Component) {
             Object(preact_min["h"])(
               "div",
               { className: "carousel-item active", style: { backgroundColor: bgcolor } },
-              Object(preact_min["h"])("img", { className: "d-block h-50 w-50", src: src1, alt: "First slide" })
+              Object(preact_min["h"])("img", { className: "d-block h-75 w-75", src: src1, alt: "First slide" })
             ),
             Object(preact_min["h"])(
               "div",
               { className: "carousel-item", style: { backgroundColor: bgcolor } },
-              Object(preact_min["h"])("img", { className: "d-block h-50 w-50", src: src2, alt: "Second slide" })
+              Object(preact_min["h"])("img", { className: "d-block h-75 w-75", src: src2, alt: "Second slide" })
             ),
             Object(preact_min["h"])(
               "div",
               { className: "carousel-item", style: { backgroundColor: bgcolor } },
-              Object(preact_min["h"])("img", { className: "d-block h-50 w-50", src: src3, alt: "Third slide" })
+              Object(preact_min["h"])("img", { className: "d-block h-75 w-75", src: src3, alt: "Third slide" })
             )
           )
         ),
@@ -471,7 +471,7 @@ var Projects__ref = Object(preact_min["h"])(
 );
 
 var _ref2 = Object(preact_min["h"])(LargeProjectCard_LargeProjectCard, {
-  src: 'https://i.imgur.com/cqejWjX.png',
+  src: 'https://i.imgur.com/xY8k3xw.gif',
   title: 'PlanCarolina',
   description: 'At UNC there are endless opportunities; however, those endless options can be overwhelming especially with only four years to seize them. We found ourselves rewriting our four-year plans over and over again on pieces of paper each time we took that art history or philosophy className and instantly wanted to add another major or minor. Could we fit it in? What about study abroad? The erasing and reoutlining became onerous, especially with the confusing UNC academic worksheets. Out of this frustration grew PlanCarolina, a tool that we hope will help you explore your indecisiveness efficiently. We are a team of three Juniors studying Computer Science, Linguistics, Economics, Math, and... who knows? We hope PlanCarolina will help you plan out your four years at this school of national champions! Cheers to planning! Kate, Hank, and Brooks.',
   skills: 'HTML, CSS, TypeScript, React, MobX, Python, MySQL, Amazon AWS.',
@@ -481,9 +481,9 @@ var _ref2 = Object(preact_min["h"])(LargeProjectCard_LargeProjectCard, {
 var _ref3 = Object(preact_min["h"])('div', { 'class': 'col-md-12', style: 'height:15px;' });
 
 var _ref4 = Object(preact_min["h"])(IOSProjectCard_IOSProjectCard, {
-  src1: 'https://i.imgur.com/R1nGo6d.png',
-  src2: 'https://i.imgur.com/GSuFhaG.png',
-  src3: 'https://i.imgur.com/2wa3KC7.png',
+  src1: 'https://i.imgur.com/pfKIhnd.gif',
+  src2: 'https://i.imgur.com/EtySNJJ.gif',
+  src3: 'https://i.imgur.com/vIv8wAC.jpg',
   title: 'Phi Sigma Pi Mobile Application',
   description: 'Last semester, I worked with my Co-IT chair to design, develop, and maintain a cross platform application to update outdated communication and data collection systems. We also recorded detailed documentation and engineered comprehensive unit tests to simplify production and scalability. Our first goal was to release the application to over 50 unique users on Apple App store and Android Play store, which we accomplished and the majority of the fraternity now uses the app every event.',
   skills: 'React-Native, React-Native-Elements, CSS, Google Firebase, Google Play Store, iTunes Connect.',
@@ -493,9 +493,9 @@ var _ref4 = Object(preact_min["h"])(IOSProjectCard_IOSProjectCard, {
 });
 
 var _ref5 = Object(preact_min["h"])(IOSProjectCard_IOSProjectCard, {
-  src1: 'https://i.imgur.com/rVX3asA.png',
-  src2: 'https://i.imgur.com/xIVuHgf.png',
-  src3: 'https://i.imgur.com/yvkO7Ah.png',
+  src1: 'https://i.imgur.com/yQT1MfU.gif',
+  src2: 'https://i.imgur.com/CeLimV0.gif',
+  src3: 'https://i.imgur.com/mE6wT5C.gif',
   title: 'Personal Weightlifting Tracker',
   description: 'I found that the apps that were on the app store for weight tracking were not exactly what I wanted. Bodybuilding.com has a cluttered app, while StrongLifts is too specific to the StrongLifts program. I chose to make this app as a personal project, because I thought it would be a great learning experience as well as something that I could actually use. Though I made a working application, I think that it is visually not my best work so I am currently in the process of remaking the weightlifting app, since I have much more experience in iOS development after my internship.',
   skills: 'Skills used: Apple iOS Programming, Swift 3.0, Core Data Stack, XCode interface builder.',
@@ -642,19 +642,19 @@ var Experience__ref = Object(preact_min["h"])(
             'div',
             { className: 'row' },
             Object(preact_min["h"])(Experience_ExperienceCard, {
-              src: 'https://i.imgur.com/qRQAdB7.jpg',
+              src: 'https://i.imgur.com/P8viX1u.jpg',
               title: 'SentryOne',
               description: 'I worked at SentryOne last summer as an iOS development intern. As a sophomore intern, I was the youngest one in the office that was doing development. Working for a company was very different than me just coding in my room. Agile development, TDD, and code reviews were a huge part of what I was doing, and what makes me a better programmer today. This is me with all of the other engineering interns with some of our new SentryOne swag.'
             }),
             Object(preact_min["h"])('div', { 'class': 'col-md-12', style: 'height:15px;' }),
             Object(preact_min["h"])(Experience_ExperienceCard, {
-              src: 'https://i.imgur.com/NIBfJb9.jpg',
+              src: 'https://i.imgur.com/7BiRKAY.jpg',
               title: 'COMP110 UTA',
               description: 'I work as a COMP110 UTA at UNC Chapel Hill along with all of these other wonderful people. COMP110 is the introduction to programming course at UNC, and is the largest undergraduate course at over 900 students per semester. I personally tutor hundreds of students a month, and I lead review sessions along with another UTA. I am also a part of the team leads, which is a special team of the head TAs that meet with the professor once a week to discuss the course.'
             }),
             Object(preact_min["h"])('div', { 'class': 'col-md-12', style: 'height:15px;' }),
             Object(preact_min["h"])(Experience_ExperienceCard, {
-              src: 'https://i.imgur.com/Ek38GPE.png',
+              src: 'https://i.imgur.com/iPBrKKA.gif',
               description: 'Something that I have loved about being an UTA for COMP110 is the sheer number of students that we help every day. Over the last two semesters, I have accumulated 300 office hours tickets for over 240 students, and seeing their feedback is incredibly rewarding.'
             })
           )

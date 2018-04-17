@@ -18,13 +18,13 @@ export class IOSProjectCard extends Component {
         <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
           <div className="carousel-inner justify-content-md-center">
             <div className="carousel-item active" style={{backgroundColor: bgcolor}}>
-              <img className="d-block h-50 w-50" src={src1} alt="First slide" />
+              <img className="d-block h-75 w-75" src={src1} alt="First slide" />
             </div>
             <div className="carousel-item" style={{backgroundColor: bgcolor}}>
-              <img className="d-block h-50 w-50" src={src2} alt="Second slide" />
+              <img className="d-block h-75 w-75" src={src2} alt="Second slide" />
             </div>
             <div className="carousel-item" style={{backgroundColor: bgcolor}}>
-              <img className="d-block h-50 w-50" src={src3} alt="Third slide" />
+              <img className="d-block h-75 w-75" src={src3} alt="Third slide" />
             </div>
           </div>
           {/* <a className="carousel-control-prev" role="button" data-slide="prev">
