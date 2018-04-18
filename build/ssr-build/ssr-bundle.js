@@ -99,37 +99,18 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 var _ref = Object(preact_min["h"])(
-  'div',
-  { className: 'fullpageImage', id: 'top' },
-  Object(preact_min["h"])(
-    'div',
-    { className: 'container container-fluid' },
-    Object(preact_min["h"])(
-      'div',
-      { className: 'row align-items-end justify-content-center', style: 'height: 100vh;' },
-      Object(preact_min["h"])(
-        'div',
-        { className: 'col-12 text-left' },
-        Object(preact_min["h"])(
-          'h4',
-          { className: 'page-title' },
-          Object(preact_min["h"])(
-            'em',
-            null,
-            'Hey, I\'m'
-          )
-        ),
-        Object(preact_min["h"])(
-          'h2',
-          { className: 'display-3 page-title' },
-          'BROOKS TOWNSEND'
-        )
-      )
-    )
-  )
+  'h2',
+  { className: 'display-3 text-light page-title' },
+  'BROOKS TOWNSEND'
 );
 
-var FullpageImage = function (_Component) {
+var _ref2 = Object(preact_min["h"])(
+  'h4',
+  { className: 'page-title' },
+  ' Software Engineer and Student'
+);
+
+var FullpageImage_FullpageImage = function (_Component) {
   _inherits(FullpageImage, _Component);
 
   function FullpageImage() {
@@ -139,7 +120,24 @@ var FullpageImage = function (_Component) {
   }
 
   FullpageImage.prototype.render = function render() {
-    return _ref;
+    return Object(preact_min["h"])(
+      'div',
+      { className: 'fullpageImage', id: 'top' },
+      Object(preact_min["h"])(
+        'div',
+        { className: 'container container-fluid ' },
+        Object(preact_min["h"])(
+          'div',
+          { className: 'row align-items-end justify-content-center', style: 'height: 100vh;' },
+          Object(preact_min["h"])(
+            'div',
+            { className: 'col- text-dark-background text-center' },
+            _ref,
+            _ref2
+          )
+        )
+      )
+    );
   };
 
   return FullpageImage;
@@ -470,7 +468,7 @@ var Projects__ref = Object(preact_min["h"])(
   'My Projects'
 );
 
-var _ref2 = Object(preact_min["h"])(LargeProjectCard_LargeProjectCard, {
+var Projects__ref2 = Object(preact_min["h"])(LargeProjectCard_LargeProjectCard, {
   src: 'https://i.imgur.com/xY8k3xw.gif',
   title: 'PlanCarolina',
   description: 'At UNC there are endless opportunities; however, those endless options can be overwhelming especially with only four years to seize them. We found ourselves rewriting our four-year plans over and over again on pieces of paper each time we took that art history or philosophy className and instantly wanted to add another major or minor. Could we fit it in? What about study abroad? The erasing and reoutlining became onerous, especially with the confusing UNC academic worksheets. Out of this frustration grew PlanCarolina, a tool that we hope will help you explore your indecisiveness efficiently. We are a team of three Juniors studying Computer Science, Linguistics, Economics, Math, and... who knows? We hope PlanCarolina will help you plan out your four years at this school of national champions! Cheers to planning! Kate, Hank, and Brooks.',
@@ -533,7 +531,7 @@ var Projects_Projects = function (_Component) {
               Object(preact_min["h"])(
                 'div',
                 { className: 'row' },
-                _ref2,
+                Projects__ref2,
                 _ref3,
                 _ref4,
                 _ref5
@@ -684,7 +682,7 @@ function index__inherits(subClass, superClass) { if (typeof superClass !== "func
 
 var index__ref = Object(preact_min["h"])(Head_Head, null);
 
-var index__ref2 = Object(preact_min["h"])(FullpageImage, null);
+var index__ref2 = Object(preact_min["h"])(FullpageImage_FullpageImage, null);
 
 var index__ref3 = Object(preact_min["h"])(AboutMe, null);
 

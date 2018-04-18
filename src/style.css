@@ -31,6 +31,13 @@ h1 {
   background-size: cover;
 }
 
+.text-dark-background {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-left: .25rem;
+  padding-right: .25rem;
+  margin-bottom: .5rem;
+}
+
 .page-title {
   color: white;
 }
