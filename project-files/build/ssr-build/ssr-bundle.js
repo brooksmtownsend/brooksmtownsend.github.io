@@ -273,8 +273,8 @@ function Head__inherits(subClass, superClass) { if (typeof superClass !== "funct
 
 
 
-var Head__ref = Object(preact_min["h"])('link', { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity: 'sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm',
-  crossorigin: 'anonymous' });
+var Head__ref = Object(preact_min["h"])("link", { rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", integrity: "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm",
+  crossorigin: "anonymous" });
 
 var Head_Head = function (_Component) {
   Head__inherits(Head, _Component);
@@ -286,12 +286,12 @@ var Head_Head = function (_Component) {
   }
 
   Head.prototype.render = function render() {
-    this.ga(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    // this.ga(window,document,'script','https://www.google-analytics.com/analytics.js','ga')
     // this.ga('create', 'UA-XXXXX-Y', 'auto');
     // this.ga('send', 'pageview');
 
     return Object(preact_min["h"])(
-      'head',
+      "head",
       null,
       Head__ref
     );

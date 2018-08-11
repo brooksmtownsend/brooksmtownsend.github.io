@@ -2,7 +2,7 @@ import { Component } from 'preact';
 
 export class Head extends Component {
   render() {
-    this.ga(window,document,'script','https://www.google-analytics.com/analytics.js','ga')
+    // this.ga(window,document,'script','https://www.google-analytics.com/analytics.js','ga')
     // this.ga('create', 'UA-XXXXX-Y', 'auto');
     // this.ga('send', 'pageview');
 
