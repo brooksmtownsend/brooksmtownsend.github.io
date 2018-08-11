@@ -1,9 +1,9 @@
 :root {
-    --main-background-color: #f9fafe;
-    --secondary-background-color: #f9fafe;
-    --text-background-color: #fff;
-    --text-color: #2C2C2C;
-    --accent-color: #727cf5;
+    --main-background-color: #303841;
+    --secondary-background-color: #282f36;
+    --text-background-color: #3A4750;
+    --text-color: #EEEEEE;
+    --accent-color: #43A680;
 }
 
 html, body {
@@ -21,7 +21,6 @@ h1 {
 .fullpageImage { 
   /* The image used */
   background-image: url("https://i.imgur.com/Dd9WK97.jpg");
-  box-shadow: 0 0 35px 0 rgba(154,161,171,.35);
 
   /* Full height */
   height: 100%; 
@@ -59,15 +58,9 @@ h1 {
 .experience-card, .project-card {
   border: none !important;
   background-color: transparent !important;
-  box-shadow: 0 0 35px 0 rgba(154,161,171,.20);
 }
 
 .btn-primary {
   background-color: var(--accent-color) !important;
-  border-color: var(--accent-color) !important;
-}
-
-.btn-primary:hover {
-  background-color: #4e5bf2 !important;
-  border-color: #4250f2 !important;
+  border: none !important;
 }

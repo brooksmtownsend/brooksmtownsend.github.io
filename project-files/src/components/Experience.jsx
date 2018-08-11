@@ -1,6 +1,4 @@
 import { Component } from 'preact';
-import { IOSProjectCard } from './IOSProjectCard'
-import { LargeProjectCard } from './LargeProjectCard';
 
 export class Experience extends Component {
   render() {
@@ -13,9 +11,17 @@ export class Experience extends Component {
                 <h1 className="display-4" id='experience'>My Experience</h1>
                 <div className="row">
                   <ExperienceCard
+                    src='https://wrm5sysfkg-flywheel.netdna-ssl.com/wp-content/uploads/2015/08/Capital_One-Logo.jpg'
+                    title='Capital One'
+                    description='I recently completed the Technology Internship Program at Capital One in Richmond, VA. I worked in the case management department as a full stack web developer. I was exposed to numerous different technologies, and at the beginning of the internship my biggest struggle was putting them all to work while learning them. Development at a large company like Capital One forced me to learn everything about containerization, microservices, DevOps development practices, CI / CD and more. My work was composed of creating a feature set in an existing web app to expedite the onboarding of new letter templates, and in the end I made multiple contributions to a Capital One inner-source (and soon to be open-source) framework.'
+                    skills='Agile Development, Angular, Docker, Git, Hibernate, Java, Jenkins, Maven, NodeJS, PostgreSQL, TypeScript'
+                  />
+                  <div class="col-md-12" style="height:15px;"></div>
+                  <ExperienceCard
                     src='https://i.imgur.com/P8viX1u.jpg'
                     title='SentryOne'
-                    description='I worked at SentryOne last summer as an iOS development intern. As a sophomore intern, I was the youngest one in the office that was doing development. Working for a company was very different than me just coding in my room. Agile development, TDD, and code reviews were a huge part of what I was doing, and what makes me a better programmer today. This is me with all of the other engineering interns with some of our new SentryOne swag.'
+                    description='For the summer of 2017 I spent my summer at SentryOne as an iOS development intern. As a sophomore intern, I was the youngest one in the office that was doing development. Working for a company was very different than me just coding in my room. Agile development, TDD, and code reviews were a huge part of what I was doing, and what makes me a better programmer today. This is me with all of the other engineering interns with some of our new SentryOne swag.'
+                    skills='Swift'
                   />
                   <div class="col-md-12" style="height:15px;"></div>
                   <ExperienceCard
@@ -44,6 +50,7 @@ class ExperienceCard extends Component {
     const src = this.props.src
     const title = this.props.title
     const description = this.props.description
+    const skills = this.props.skills
 
     return (
       <div className="col-md-10 offset-md-1">
@@ -52,7 +59,7 @@ class ExperienceCard extends Component {
           <div className="card-body">
             <h5 className="card-title">{title}</h5>
             <p className="card-text">{description}</p>
-            {/* <p className="card-text text-muted">{"Skills used: " + skills}</p> */}
+            {skills && <p className="card-text text-muted">{"Skills used: " + skills}</p>}
             {/* <a href={link} className="btn btn-primary">View on Github</a> */}
           </div>
         </div>

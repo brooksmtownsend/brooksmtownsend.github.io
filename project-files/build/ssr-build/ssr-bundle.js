@@ -273,8 +273,8 @@ function Head__inherits(subClass, superClass) { if (typeof superClass !== "funct
 
 
 
-var Head__ref = Object(preact_min["h"])("link", { rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", integrity: "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm",
-  crossorigin: "anonymous" });
+var Head__ref = Object(preact_min["h"])('link', { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity: 'sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm',
+  crossorigin: 'anonymous' });
 
 var Head_Head = function (_Component) {
   Head__inherits(Head, _Component);
@@ -286,11 +286,21 @@ var Head_Head = function (_Component) {
   }
 
   Head.prototype.render = function render() {
+    this.ga(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    // this.ga('create', 'UA-XXXXX-Y', 'auto');
+    // this.ga('send', 'pageview');
+
     return Object(preact_min["h"])(
-      "head",
+      'head',
       null,
       Head__ref
     );
+  };
+
+  Head.prototype.ga = function ga(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments);
+    }, i[r].l = 1 * new Date();a = s.createElement(o), m = s.getElementsByTagName(o)[0];a.async = 1;a.src = g;m.parentNode.insertBefore(a, m);
   };
 
   return Head;
@@ -556,8 +566,6 @@ function Experience__inherits(subClass, superClass) { if (typeof superClass !== 
 
 
 
-
-
 var Experience = function (_Component) {
   Experience__inherits(Experience, _Component);
 
@@ -587,6 +595,7 @@ var Experience_ExperienceCard = function (_Component2) {
     var src = this.props.src;
     var title = this.props.title;
     var description = this.props.description;
+    var skills = this.props.skills;
 
     return Object(preact_min["h"])(
       'div',
@@ -607,6 +616,11 @@ var Experience_ExperienceCard = function (_Component2) {
             'p',
             { className: 'card-text' },
             description
+          ),
+          skills && Object(preact_min["h"])(
+            'p',
+            { className: 'card-text text-muted' },
+            "Skills used: " + skills
           )
         )
       )
@@ -640,9 +654,17 @@ var Experience__ref = Object(preact_min["h"])(
             'div',
             { className: 'row' },
             Object(preact_min["h"])(Experience_ExperienceCard, {
+              src: 'https://wrm5sysfkg-flywheel.netdna-ssl.com/wp-content/uploads/2015/08/Capital_One-Logo.jpg',
+              title: 'Capital One',
+              description: 'I recently completed the Technology Internship Program at Capital One in Richmond, VA. I worked in the case management department as a full stack web developer. I was exposed to numerous different technologies, and at the beginning of the internship my biggest struggle was putting them all to work while learning them. Development at a large company like Capital One forced me to learn everything about containerization, microservices, DevOps development practices, CI / CD and more. My work was composed of creating a feature set in an existing web app to expedite the onboarding of new letter templates, and in the end I made multiple contributions to a Capital One inner-source (and soon to be open-source) framework.',
+              skills: 'Agile Development, Angular, Docker, Git, Hibernate, Java, Jenkins, Maven, NodeJS, PostgreSQL, TypeScript'
+            }),
+            Object(preact_min["h"])('div', { 'class': 'col-md-12', style: 'height:15px;' }),
+            Object(preact_min["h"])(Experience_ExperienceCard, {
               src: 'https://i.imgur.com/P8viX1u.jpg',
               title: 'SentryOne',
-              description: 'I worked at SentryOne last summer as an iOS development intern. As a sophomore intern, I was the youngest one in the office that was doing development. Working for a company was very different than me just coding in my room. Agile development, TDD, and code reviews were a huge part of what I was doing, and what makes me a better programmer today. This is me with all of the other engineering interns with some of our new SentryOne swag.'
+              description: 'For the summer of 2017 I spent my summer at SentryOne as an iOS development intern. As a sophomore intern, I was the youngest one in the office that was doing development. Working for a company was very different than me just coding in my room. Agile development, TDD, and code reviews were a huge part of what I was doing, and what makes me a better programmer today. This is me with all of the other engineering interns with some of our new SentryOne swag.',
+              skills: 'Swift'
             }),
             Object(preact_min["h"])('div', { 'class': 'col-md-12', style: 'height:15px;' }),
             Object(preact_min["h"])(Experience_ExperienceCard, {
